@@ -40,6 +40,20 @@ struct ContentView: View {
                     }
                 }
             }
+            
+            VStack{
+                Text("Test Series")
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                ScrollView(.horizontal){
+                    HStack{
+                        ForEach(testList){ item in
+                            testCard(testItem: item)
+                            
+                        }
+                    }
+                }
+            }
         }
     }
 }

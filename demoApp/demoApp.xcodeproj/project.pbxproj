@@ -16,6 +16,9 @@
 		3C751BA425B450860083BB1A /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C751BA325B450860083BB1A /* card.swift */; };
 		3C751BA925B45BD30083BB1A /* courseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C751BA825B45BD30083BB1A /* courseModel.swift */; };
 		3C751BAE25B45EA00083BB1A /* courseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C751BAD25B45EA00083BB1A /* courseList.swift */; };
+		3C751BB325B46AB70083BB1A /* testCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C751BB225B46AB70083BB1A /* testCard.swift */; };
+		3C751BB825B473A90083BB1A /* testModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C751BB725B473A90083BB1A /* testModel.swift */; };
+		3C751BBD25B474BA0083BB1A /* testList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C751BBC25B474BA0083BB1A /* testList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3C751BA325B450860083BB1A /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
 		3C751BA825B45BD30083BB1A /* courseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseModel.swift; sourceTree = "<group>"; };
 		3C751BAD25B45EA00083BB1A /* courseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseList.swift; sourceTree = "<group>"; };
+		3C751BB225B46AB70083BB1A /* testCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCard.swift; sourceTree = "<group>"; };
+		3C751BB725B473A90083BB1A /* testModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testModel.swift; sourceTree = "<group>"; };
+		3C751BBC25B474BA0083BB1A /* testList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				3C751BA325B450860083BB1A /* card.swift */,
 				3C751BA825B45BD30083BB1A /* courseModel.swift */,
 				3C751BAD25B45EA00083BB1A /* courseList.swift */,
+				3C751BB225B46AB70083BB1A /* testCard.swift */,
+				3C751BB725B473A90083BB1A /* testModel.swift */,
+				3C751BBC25B474BA0083BB1A /* testList.swift */,
 			);
 			path = demoApp;
 			sourceTree = "<group>";
@@ -270,9 +279,12 @@
 			files = (
 				3C751BA425B450860083BB1A /* card.swift in Sources */,
 				3C751BAE25B45EA00083BB1A /* courseList.swift in Sources */,
+				3C751BB825B473A90083BB1A /* testModel.swift in Sources */,
 				3C751B7825B44C690083BB1A /* ContentView.swift in Sources */,
 				3C751BA925B45BD30083BB1A /* courseModel.swift in Sources */,
+				3C751BBD25B474BA0083BB1A /* testList.swift in Sources */,
 				3C751B7625B44C690083BB1A /* demoAppApp.swift in Sources */,
+				3C751BB325B46AB70083BB1A /* testCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
