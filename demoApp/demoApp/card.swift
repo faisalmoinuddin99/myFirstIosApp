@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct card: View {
+    var course: Course
     var body: some View {
         ZStack{
-            Image("img-1").offset(y : 40)
+            Image(course.courseImage).offset(y : 40)
             
             VStack{
-                Text("React JS course")
+                Text(course.courseName)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
-                Text("Just 2.5$")
+                Text(course.coursePrice)
                     .font(.headline)
                     .fontWeight(.regular)
                     .foregroundColor(Color.white)
@@ -48,14 +49,14 @@ struct card: View {
                 .rotationEffect(.init(degrees: 15))
         }
         .frame(width: 312, height: 520)
-        .background(Color("LCOdarkpink"))
+        .background(course.courseColor)
         .cornerRadius(18)
     }
 }
 
 struct card_Previews: PreviewProvider {
     static var previews: some View {
-        card()
+        card(course: courseList[2])
             .previewLayout(.sizeThatFits)
     }
 }

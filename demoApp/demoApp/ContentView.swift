@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var courses: [Course] = courseList
     var body: some View {
         ScrollView{
             VStack{
@@ -18,8 +20,9 @@ struct ContentView: View {
                     HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/,
                            spacing: 20
                     ){
-                        ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                            card()
+                        ForEach(courses) { item in
+                            card(course: item)
+//                            Text("Hi")
                         }
                     }
                 }
@@ -30,8 +33,9 @@ struct ContentView: View {
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 ScrollView(.horizontal){
                     HStack{
-                        ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                            card()
+                        ForEach(courses) { item in
+                            card(course: item)
+//                            Text("Hi")
                         }
                     }
                 }
@@ -42,6 +46,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(courses: courseList)
     }
 }
